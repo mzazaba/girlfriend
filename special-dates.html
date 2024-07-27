@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Dates</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            color: black;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #ffd1dc; /* 浅粉色背景 */
+            border-radius: 5px;
+        }
+
+        li::before {
+            content: "\2022";  /* 使用圆点符号作为项目符号 */
+            color: #333;  /* 圆点颜色 */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;  /* 调整圆点与文本之间的距离 */
+            margin-left: -1em;  /* 调整圆点的位置 */
+        }
+
+        li:nth-child(odd) {
+            background-color: #ffe4e9;  /* 更浅的粉色背景 */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Special Dates</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="our-story.html">Our Story</a>
+                <a href="special-dates.html">Special Dates</a>
+                <a href="love-quotes.html">Love Quotes</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="videos.html">Videos</a>
+            </nav>
+        </header>
+        
+        <section class="section">
+            <h2>Memorable Dates</h2>
+            <p>Here are the dates that matter to us...
+            </p>
+
+            <ul>
+                <li>  We met on January 22nd      </li>
+                    <li>  Your birthday: January 29th</li>
+                    <li>    You agreed to be my girlfriend for the first time on February 15th</li>
+                    <li>  You told me you agreed: February 19th</li>
+            <li> Our 100th anniversary of love: May 25th (we miss...)</li>
+            <li>      Most importantly: every day spent with you</li>
+                </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sweet Love Stories.
+            
+        </p>
+    </footer>
+
+    <audio id="background-music">
+        <source src="3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="music-icon" class="music-icon"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
