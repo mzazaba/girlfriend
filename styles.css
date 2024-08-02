@@ -23,7 +23,7 @@ header {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 10px;
     color: #fff; /* Header text color */
 }
@@ -42,6 +42,7 @@ nav a {
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease; /* Transition effect */
+    display: inline-block;
 }
 
 nav a:hover {
@@ -120,8 +121,8 @@ footer {
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 80px;
-    height: 80px;
+    width: 50px; /* Adjusted for mobile */
+    height: 50px; /* Adjusted for mobile */
     background-image: url('MUC.png'); /* Music icon image */
     background-size: cover;
     cursor: pointer;
@@ -139,5 +140,67 @@ footer {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        margin: 0 5px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .video-container {
+        padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
+    }
+
+    .music-icon {
+        width: 40px; /* Further adjust for smaller screens */
+        height: 40px; /* Further adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        padding: 5px 10px;
+        margin: 0 2px;
+        font-size: 0.9em;
+    }
+
+    .quote {
+        font-size: 1em;
+    }
+
+    .video-container {
+        padding-bottom: 100%; /* Adjust aspect ratio for very small screens */
+    }
+
+    .music-icon {
+        width: 30px; /* Further adjust for very small screens */
+        height: 30px; /* Further adjust for very small screens */
     }
 }
